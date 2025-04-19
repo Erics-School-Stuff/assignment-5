@@ -5,6 +5,28 @@ const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
+
+document.addEventListener('keydown', function(event) {
+  if(event.key==="Enter"){
+    let showHideText = showHideBtn.textContent;
+    if(showHideText === 'Show comments') {
+      showHideBtn.textContent = 'Hide comments';
+      commentWrapper.style.display = 'block';
+    } else {
+      showHideBtn.textContent = 'Show comments';
+      commentWrapper.style.display = 'none';
+    }
+  }
+});
+
+document.addEventListener('keydown', function(event) {
+  if(event.key==="Tab"){
+    showHideBtn.focus();
+  }
+});
+
+
+
 showHideBtn.onclick = function() {
   let showHideText = showHideBtn.textContent;
   if(showHideText === 'Show comments') {
