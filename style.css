@@ -32,6 +32,9 @@ font[size="7"], font[size="6"], font[size="5"] {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+  /* learned how to do this from this site (this is a citation):
+  https://dev.to/ibn_abubakre/hiding-elements-in-css-the-accessible-way-5h1b
+  */
 }
 
 
